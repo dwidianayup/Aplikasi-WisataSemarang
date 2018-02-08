@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.apple.semarangtouriss.LoginActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/editt1"
+        android:layout_below="@id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username :"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_below="@+id/editt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter Username" />
+
+    <TextView
+        android:id="@+id/editt2"
+        android:layout_below="@id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_below="@+id/editt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:text="LOGIN"
+        android:onClick="doSave" />
+
+</RelativeLayout>

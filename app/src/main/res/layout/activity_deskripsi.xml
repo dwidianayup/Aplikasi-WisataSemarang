@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.apple.semarangtouriss.DeskripsiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semarang Tourism Smart City"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="1000px"
+            android:layout_height="1200px"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/splash"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:text="Semarang Tourism Smart City adalah sebuah aplikasi yang mengusung teknologi Augmented Reality (AR). Aplikasi ini dapat digunakan sebagai pengganti tour guide bagi orang yang ingin mengetahui dan mengunjungi wisata di Kota Semarang."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:text="Cara kerja aplikasi ini yakni user harus mengaktifkan kamera yang terdapat pada aplikasi dan mengarahkannya pada barcode yang ada pada tempat wisata. Pada tempat wisata memang sebelumnya tidak terdapat barcode, oleh karena itu kita dapat melakukan pengadaan barcode dengan menghubungi dinas pariwisata terlebih dahulu."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Aplikasi ini juga menggunakan webservice dari google maps untuk menampilkan rute terdekat dari lokasi user. Penggunaan webservice ini juga bertujuan agar dapat menampilkan tempat wisata terdekat dari current location user."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ListWisata"
+            android:text="Login"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Register"
+            android:text="Register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

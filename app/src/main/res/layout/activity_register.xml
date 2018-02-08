@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.apple.semarangtouriss.RegisterActivity">
+
+    <TextView
+        android:id="@+id/main_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="REGISTER"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tekss1"
+        android:layout_below="@id/main_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama :"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/teks1"
+        android:layout_below="@+id/tekss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter Your Name" />
+
+    <TextView
+        android:id="@+id/tekss2"
+        android:layout_below="@id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/teks2"
+        android:layout_below="@+id/tekss2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter Your Email" />
+
+    <TextView
+        android:id="@+id/tekss3"
+        android:layout_below="@id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/teks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tekss3"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter New Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonn1"
+        android:layout_below="@+id/teks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:text="REGISTER"
+        android:onClick="doRegis" />
+
+</RelativeLayout>
